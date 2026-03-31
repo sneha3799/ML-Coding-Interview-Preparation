@@ -1,6 +1,6 @@
 ## Interview Preparation : ML Coding
 
-1. RAG pipeline
+1. RAG pipeline + Evaluation
 2. Text classification baseline (TF-IDF + LogisticRegression)
 3. LLM output (JSON) parsing
 4. Clustering
