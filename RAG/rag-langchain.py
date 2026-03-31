@@ -3,8 +3,6 @@
 # build vector retriever → hybrid retrieve → permission filter → 
 # rerank → generate
 
-# give me datasets/ use-case for clustering, fraud-anomaly model. 
-
 import os
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter

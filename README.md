@@ -1,10 +1,10 @@
 ## Interview Preparation : ML Coding
 
-1. RAG pipeline + Evaluation
+1. Production-RAG pipeline + Evaluation
 2. Text classification baseline (TF-IDF + LogisticRegression)
 3. LLM output (JSON) parsing
 4. Clustering
-5. Fraud-anomaly model
+5. Fraud-anomaly model: supervised (SMOTE + XGBoost), unsupervised (IsolationForest)
 6. Regression
 7. Neural Networks
 8. LLM with tool-calling
@@ -19,3 +19,5 @@
 17. Oversized Document Retrieval
 18. Text classification - BERT
 19. Topic Modeling
+
+Synthetic Minority Oversampling Technique (SMOTE) over-sampling technique for classimbalance : # https://medium.com/@debspeaks/imbalanced-data-classification-oversampling-and-undersampling-297ba21fbd7c 
