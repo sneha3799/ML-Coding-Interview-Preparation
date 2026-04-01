@@ -9,7 +9,7 @@
 7. Neural Networks ***********
 8. LLM with tool-calling (DONE)
 9. ReAct agent ***********
-10. LLM-as-a-judge *************
+10. LLM-as-a-judge (DONE)
 11. Overfit Avoidance (DONE)
 12. Transformer Self Attention ***********
 13. Generative AI for Fraud Detection ************
@@ -22,6 +22,7 @@
 20. text-to-SQL using LLM (DONE)
 21. Input sanitization for prompt injection protection ************
 22. MCP
+23. Data preprocessing
 
 Other concepts: 
 
