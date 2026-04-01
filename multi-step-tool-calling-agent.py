@@ -1,8 +1,4 @@
-# Thought:  I need to find the current time
-# Act:      current_time()
-# Observe:  14:32:05
-# Thought:  I now have the time, I can answer
-# Act:      Final answer → "The current time is 14:32:05"
+# Multi-step tool-calling agent
 
 import os 
 import json
@@ -65,22 +61,7 @@ def add(a, b):
     return a+b
 
 messages = [
-    {"role": "system", "content": """You are a ReAct agent. You solve problems step by step.
-
-For every step, you MUST follow this exact format before calling any tool:
-
-Thought: <your reasoning about what to do next>
-Act: <the tool you will call and why>
-
-After receiving a tool result:
-Observe: <what the result tells you>
-Thought: <what you should do next based on this>
-
-When you have the final answer:
-Thought: I now have everything I need to answer.
-Final Answer: <your answer as an integer>
-
-Never skip the Thought step. Always reason before acting."""}
+    {"role": "system", "content": "You are a tool calling agent."}
 ]
 
 prompt = f"""
@@ -100,32 +81,29 @@ while True:
     message = response.choices[0].message
     messages.append(message)
 
-    # Print Thought/Act reasoning if present
-    if message.content:
-        print(f"\n{message.content}")  # prints Thought + Act reasoning
-
-    # No tool calls = model has final answer
     if not message.tool_calls:
         print(f"Final result: {message.content}")
         break
 
-    # Execute tools and print Observe
     if message.tool_calls:
         for tool_call in message.tool_calls:
             args = json.loads(tool_call.function.arguments)
-            name = tool_call.function.name
 
             if tool_call.function.name=="add":
                 res = add(**args)
 
+                messages.append({
+                    "role":"tool",
+                    "tool_call_id": tool_call.id,
+                    "content": str(res)
+                })
+
             elif tool_call.function.name=="multiply":
                 res = multiply(**args)
 
-            print(f"\nObserve: {name}({args}) → {res}")  # visible observation step 
-
-            messages.append({
-                "role":"tool",
-                "tool_call_id": tool_call.id,
-                "content": str(res)
-            })
+                messages.append({
+                    "role":"tool",
+                    "tool_call_id": tool_call.id,
+                    "content": str(res)
+                })
             

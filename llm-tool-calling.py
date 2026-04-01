@@ -21,6 +21,12 @@
 #     ↓
 # LLM final answer
 
+# Call LLM
+# Check tool call
+# Execute tool
+# Send result back
+# Call LLM again
+
 import os
 import json
 from datetime import datetime
@@ -80,3 +86,26 @@ if message.tool_calls:
 
 final = client.chat.completions.create(model="gpt-3.5-turbo", messages=messages)
 print(f"Time: {final.choices[0].message.content}")
+
+# messages = [{"role": "user", "content": "What time is it?"}]
+
+# while True:
+#     response = client.chat.completions.create(
+#         model="gpt-3.5-turbo", messages=messages, tools=tools
+#     )
+#     message = response.choices[0].message
+#     messages.append(message)
+
+#     if not message.tool_calls:  # Model decided it's done
+#         print(message.content)
+#         break
+
+#     for tool_call in message.tool_calls:  # Model wants a tool
+#         if tool_call.function.name == "current_time":
+#             result = current_time()
+#             messages.append({
+#                 "role": "tool",
+#                 "tool_call_id": tool_call.id,
+#                 "content": result
+#             })
+#     # Loop back — model decides next step
