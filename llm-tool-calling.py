@@ -1,3 +1,26 @@
+# Flow
+
+# User → LLM
+# LLM → decides tool needed
+# LLM → returns tool_call
+# Python → executes tool
+# Python → sends result back
+# LLM → final answer
+
+# Pipeline
+
+# User query
+#     ↓
+# LLM reasoning
+#     ↓
+# Tool call request
+#     ↓
+# Python executes tool
+#     ↓
+# Tool result returned
+#     ↓
+# LLM final answer
+
 import os
 import json
 from datetime import datetime
