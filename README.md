@@ -10,14 +10,12 @@
 8. LLM with tool-calling
 9. ReAct agent
 10. Reflection and Planning design pattern LangGraph
-11. Credit Card Fraud Model
-12. Bank Fraud Model
-13. Overfit Avoidance 
-14. Transformer Self Attention
-15. Generative AI for Fraud Detection
-16. Text - to - Image Retrieval 
-17. Oversized Document Retrieval
-18. Text classification - BERT
-19. Topic Modeling
+11. Overfit Avoidance 
+12. Transformer Self Attention
+13. Generative AI for Fraud Detection
+14. Text - to - Image Retrieval 
+15. Oversized Document Retrieval
+16. Text classification - BERT
+17. Topic Modeling
 
-Synthetic Minority Oversampling Technique (SMOTE) over-sampling technique for classimbalance : # https://medium.com/@debspeaks/imbalanced-data-classification-oversampling-and-undersampling-297ba21fbd7c 
+Synthetic Minority Oversampling Technique (SMOTE) over-sampling technique for classimbalance : https://medium.com/@debspeaks/imbalanced-data-classification-oversampling-and-undersampling-297ba21fbd7c 
