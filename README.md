@@ -18,7 +18,7 @@
 16. Topic Modeling - BERTopic
 17. Routing: 80% to small model and 20% to large model
 18. RAG with structured and unstructured data (DONE)
-19. PII masking 
+19. PII masking (DONE)
 20. text-to-SQL using LLM (DONE)
 21. Input sanitization for prompt injection protection
 22. MCP

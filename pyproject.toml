@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "bertopic>=0.17.4",
     "datasets>=4.8.4",
     "dotenv>=0.9.9",
     "imbalanced-learn>=0.14.1",
