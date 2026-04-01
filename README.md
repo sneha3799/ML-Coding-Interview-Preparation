@@ -17,7 +17,7 @@
 15. Text classification - BERT
 16. Topic Modeling - BERTopic
 17. Routing: 80% to small model and 20% to large model
-18. RAG with structured and unstructured data 
+18. RAG with structured and unstructured data (DONE)
 19. PII masking
 20. text-to-SQL using LLM
 21. Input sanitization for prompt injection protection

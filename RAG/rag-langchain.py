@@ -67,7 +67,6 @@ db.save_local("faiss_index")
 
 # retrieve
 dense_retriever = db.as_retriever(search_kwargs={"k": 3})
-
 bm25_retriever = BM25Retriever.from_documents(all_chunks)
 bm25_retriever.k = 3
 
