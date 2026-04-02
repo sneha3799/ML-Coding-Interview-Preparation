@@ -71,10 +71,10 @@ print(output)
 #     generate structured CRM notes
 #     append to results
 
+
+
 # from langchain_text_splitters import RecursiveCharacterTextSplitter
-
 # splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=200)
-
 # chunks = splitter.split_text(transcript)
 
 # # Map: summarize each chunk

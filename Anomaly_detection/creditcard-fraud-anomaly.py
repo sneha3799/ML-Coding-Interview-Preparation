@@ -47,7 +47,7 @@ X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
 
 # oversampling to handle class imbalance
-#creating the instance for SMOTE
+# creating the instance for SMOTE
 smote = SMOTE()
 
 #Resampling with SMOTE

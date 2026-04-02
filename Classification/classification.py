@@ -38,6 +38,7 @@ print(train.head())
 #     tokens = word_tokenize(text)
 #     lemmas = [lemmatizer.lemmatize(word) for word in tokens]
 #     return " ".join(lemmas)
+
 def clean(text):
     text = text.lower().strip()
     text = "".join(ch if ch.isalnum() or ch.isspace() else " " for ch in text)
