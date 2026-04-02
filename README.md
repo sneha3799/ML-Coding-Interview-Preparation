@@ -11,18 +11,18 @@
 9. ReAct agent (DONE)
 10. LLM-as-a-judge (DONE)
 11. Overfit Avoidance (DONE)
-12. Transformer Self Attention ***********
-13. Generative AI for Fraud Detection ************
+12. Transformer Self Attention
+13. Generative AI for Fraud Detection (DONE)
 14. Text - to - Image Retrieval (DONE)
 15. Text classification - BERT *************
 16. Topic Modeling - BERTopic (DONE)
-17. Routing: 80% to small model and 20% to large model **********
+17. Routing: 80% to small model and 20% to large model (DONE)
 18. RAG with structured and unstructured data (DONE)
 19. PII masking (DONE)
 20. text-to-SQL using LLM (DONE)
 21. MCP
 22. Data preprocessing
-23. LLM finetuning using LoRA
+23. LLM finetuning using LoRA ***********
 24. Multi-step tool-calling agent (DONE)
 
 Other concepts: 
